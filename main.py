@@ -96,4 +96,5 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     loop.create_task(miso_surprise_call(app))
     
-    app.run_polling(drop_pending_updates=True)
+app.run_polling(drop_pending_updates=True, close_loop=False)
+
